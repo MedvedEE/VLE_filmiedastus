@@ -3,61 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meedia Kategooriad</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Kategooriad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <a href="#">Seriaalid</a>
-            <a href="#">Filmid</a>
-            <a href="#">Tellimine</a>
-            <a href="#">Kontakt</a>
-        </div>
-        <div class="category">
-            <h2>Komöödia</h2>
-            <div class="images">
-                <img src="comedy1.jpg" alt="Komöödia 1">
-                <img src="comedy2.jpg" alt="Komöödia 2">
-                <img src="comedy3.jpg" alt="Komöödia 3">
-                <img src="comedy4.jpg" alt="Komöödia 4">
-            </div>
-        </div>
-        <div class="category">
-            <h2>Põnevus</h2>
-            <div class="images">
-                <img src="thriller1.jpg" alt="Põnevus 1">
-                <img src="thriller2.jpg" alt="Põnevus 2">
-                <img src="thriller3.jpg" alt="Põnevus 3">
-                <img src="thriller4.jpg" alt="Põnevus 4">
-            </div>
-        </div>
-        <div class="category">
-            <h2>Krimi</h2>
-            <div class="images">
-                <img src="crime1.jpg" alt="Krimi 1">
-                <img src="crime2.jpg" alt="Krimi 2">
-            </div>
-        </div>
-        <div class="category">
-            <h2>Dokumentaal</h2>
-            <div class="images">
-                <img src="documentary1.jpg" alt="Dokumentaal 1">
-                <img src="documentary2.jpg" alt="Dokumentaal 2">
-            </div>
-        </div>
-        <div class="category">
-            <h2>Romantika</h2>
-            <div class="images">
-                <img src="images/romance1.jpg" alt="Romantika 1">
-            </div>
-        </div>
-        <div class="category">
-            <h2>Seiklus</h2>
-            <div class="images">
-                <img src="adventure1.jpg" alt="Seiklus 1">
+    <!-- Otsinguriba + ikoon-->
+    <div class="container mt-3">
+        <div class="d-flex justify-content-between align-items-center">
+            <i class="bi bi-film" style="font-size: 40px; color: black;"></i> 
+            <div class="search-bar">
+                <input type="text" class="form-control" placeholder="Otsi filme ja seriaale">
             </div>
         </div>
     </div>
+    <!-- Menüü  -->
+    <div class="navbar">
+        <a href="#">Seriaalid</a>
+        <a href="#">Filmid</a>
+        <a href="#">Tellimine</a>
+        <a href="#">Kontakt</a>
+    </div>
+
+    <!-- Kategooriad -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-6 mb-3">
+                <a href="comedy.html" class="btn-category btn-comedy">
+                    <div class="image-container"></div>
+                    <span class="btn-text">Komöödia</span>
+                </a>
+            </div>
+            <div class="col-6 mb-3">
+                <a href="thriller.html" class="btn-category btn-thriller">
+                    <div class="image-container"></div>
+                    <span class="btn-text">Põnevus</span>
+                </a>
+            </div>
+            <div class="col-6 mb-3">
+                <a href="crime.html" class="btn-category btn-crime">
+                    <div class="image-container"></div>
+                    <span class="btn-text">Krimi</span>
+                </a>
+            </div>
+            <div class="col-6 mb-3">
+                <a href="documentary.html" class="btn-category btn-documentary">
+                    <div class="image-container" ></div>
+                    <span class="btn-text">Dokumentaal</span>
+                </a>
+            </div>
+            <div class="col-6 mb-3">
+                <a href="romance.html" class="btn-category btn-romance">
+                    <div class="image-container"></div>
+                    <span class="btn-text">Romantika</span>
+                </a>
+            </div>
+            <div class="col-6 mb-3">
+                <a href="adventure.html" class="btn-category btn-adventure">
+                    <div class="image-container"></div>
+                    <span class="btn-text">Seiklus</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Jalus -->
+    <footer class="footer ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Kontakt</h5>
+                    <p>email@email.com<br>
+                    +372 5555 5555</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end align-items-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>

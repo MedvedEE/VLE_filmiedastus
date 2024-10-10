@@ -1,0 +1,93 @@
+body {
+    background-color: #f8d3da;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #c23a53;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.search-bar input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.btn-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 300px; 
+    width: 100%; 
+    position: relative; 
+    color: white;
+    font-size: 24px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.image-container {
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+    height: 100%; 
+}
+
+.btn-text {
+    background-color: #c23a53; 
+    width: 100%; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: absolute; 
+    bottom: 0; 
+    border-radius: 0 0 10px 10px; 
+}
+.btn-comedy { background-image: url('../images/comedy.jpg'); }
+.btn-thriller { background-image: url('../images/thriller.jpg'); }
+.btn-crime { background-image: url('../images/crime.jpg'); }
+.btn-documentary { background-image: url('../images/documentary.jpg'); }
+.btn-romance { background-image: url('../images/romance.jpg'); }
+.btn-adventure { background-image: url('../images/adventure.jpg'); }
+
+
+.footer {
+    background-color: #c23a53; 
+    color: #000;
+    border-radius: 0 0 20px 20px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer h5 {
+    font-weight: bold;
+}
+.footer a {
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+}
+.social-icons {
+    font-size: 30px;
+}
+.social-icons a {
+    margin-right: 20px;
+}
