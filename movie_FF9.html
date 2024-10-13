@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="et">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 </head>
+
 <body>
     <!-- Otsinguriba + ikoon-->
     <div class="container mt-3">
@@ -32,34 +34,47 @@
 
     <div class="container mt-4">
         <h1 class="text-dark">Film</h1>
-        <a href="thriller.html"><button type="button" class="btn btn-outline-danger"><i class="bi bi-arrow-left"></i> Tagasi</button></a>
+        <a href="thriller.html"><button type="button" class="btn btn-outline-danger"><i class="bi bi-arrow-left"></i>
+                Tagasi</button></a>
         <br>
         <br>
         <div class="movie-description text-dark">
             <h2 class="text-dark">Fast X</h2>
             <div class="row">
                 <div class="col-6 mb-3 col-md-4 col-lg-3">
-                    <img class="movie-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT26cCz4laFQinmeRZIyUj2rC-QUheFbYyhtg&s">
+                    <img class="movie-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT26cCz4laFQinmeRZIyUj2rC-QUheFbYyhtg&s">
                 </div>
                 <div class="col-9">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nunc id metus dapibus feugiat. Sed maximus felis ut imperdiet aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin eget neque velit. Nunc a sapien dui. Donec elementum elit et dolor mollis, vitae blandit lacus vestibulum. Sed et sollicitudin mauris.</p>
-            <p>Fusce pharetra elit eget orci vestibulum euismod. Cras quis libero ullamcorper, rhoncus ligula ac, feugiat ex. Phasellus massa turpis, pulvinar in vehicula nec, elementum vel ante. Fusce interdum suscipit tortor. Mauris porta, justo pulvinar lobortis venenatis, turpis leo mollis felis, sed rutrum erat lectus non nisi. Suspendisse at nulla ac ipsum malesuada venenatis vitae sit amet elit. Morbi viverra auctor eros eu porta. Vivamus a orci urna. Integer tristique et dui sit amet sodales.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nunc id metus dapibus feugiat.
+                        Sed maximus felis ut imperdiet aliquam. Interdum et malesuada fames ac ante ipsum primis in
+                        faucibus. Proin eget neque velit. Nunc a sapien dui. Donec elementum elit et dolor mollis, vitae
+                        blandit lacus vestibulum. Sed et sollicitudin mauris.</p>
+                    <p>Fusce pharetra elit eget orci vestibulum euismod. Cras quis libero ullamcorper, rhoncus ligula
+                        ac, feugiat ex. Phasellus massa turpis, pulvinar in vehicula nec, elementum vel ante. Fusce
+                        interdum suscipit tortor. Mauris porta, justo pulvinar lobortis venenatis, turpis leo mollis
+                        felis, sed rutrum erat lectus non nisi. Suspendisse at nulla ac ipsum malesuada venenatis vitae
+                        sit amet elit. Morbi viverra auctor eros eu porta. Vivamus a orci urna. Integer tristique et dui
+                        sit amet sodales.</p>
                 </div>
-            </div>            
+            </div>
         </div>
 
         <div class="container mt-4">
             <h1 class="text-dark">Vali pakett</h1>
             <div class="d-grid gap-2">
-                <button type="button" class="btn selected-package" onclick="startMovieProcess()">Pakett on juba valitud</button>
+                <button type="button" class="btn selected-package" onclick="startMovieProcess()">Pakett on juba
+                    valitud</button>
                 <button type="button" class="btn btn-secondary" onclick="choosePackage()">Vali uus pakett</button>
             </div>
-    
+
             <div id="package-selection" class="mt-4 d-none">
-                <button type="button" class="btn selected-package" onclick="chooseStudentPackage()">Võta tudengi pakett</button>
-                <button type="button" class="btn selected-package" onclick="chooseRegularPackage()">Võta tavapakett</button>
+                <button type="button" class="btn selected-package" onclick="chooseStudentPackage()">Võta tudengi
+                    pakett</button>
+                <button type="button" class="btn selected-package" onclick="chooseRegularPackage()">Võta
+                    tavapakett</button>
             </div>
-    
+
             <div id="payment-process" class="mt-4 d-none">
                 <h2>Sisestage kontakt- ja makseandmed</h2>
                 <div class="mb-3">
@@ -85,7 +100,7 @@
                 </div>
                 <button type="button" class="btn btn-success" onclick="makePayment()">Maksa</button>
             </div>
-    
+
             <div id="payment-confirmation" class="mt-4 d-none">
                 <h2>Maksmine õnnestus</h2>
                 <p style="color: black;">Kinnitus makse kohta on saadetud. Nüüd saad filmi vaadata!</p>
@@ -99,13 +114,16 @@
         <br>
         <div class="row">
             <div class="col-6 mb-3 col-md-4 col-lg-3">
-                <a href="movie_FF9.html" class="movie"><img class="movie-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT26cCz4laFQinmeRZIyUj2rC-QUheFbYyhtg&s"></a>
+                <a href="movie_FF9.html" class="movie"><img class="movie-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT26cCz4laFQinmeRZIyUj2rC-QUheFbYyhtg&s"></a>
             </div>
             <div class="col-6 mb-3 col-md-4 col-lg-3">
-                <a href="" class="movie"><img class="movie-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Taken_trilogy_DVD_cover.jpg/220px-Taken_trilogy_DVD_cover.jpg"></a>
+                <a href="" class="movie"><img class="movie-image"
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Taken_trilogy_DVD_cover.jpg/220px-Taken_trilogy_DVD_cover.jpg"></a>
             </div>
             <div class="col-6 mb-3 col-md-4 col-lg-3">
-                <a href="" class="movie"><img class="movie-image" src="https://m.media-amazon.com/images/M/MV5BYmZjZWQ0OTktODdlYy00ZjA1LWJlNzYtNmYwMDc4YzQzZmQwXkEyXkFqcGc@._V1_.jpg"></a>
+                <a href="" class="movie"><img class="movie-image"
+                        src="https://m.media-amazon.com/images/M/MV5BYmZjZWQ0OTktODdlYy00ZjA1LWJlNzYtNmYwMDc4YzQzZmQwXkEyXkFqcGc@._V1_.jpg"></a>
             </div>
         </div>
     </div>
@@ -117,7 +135,7 @@
                 <div class="col-md-6">
                     <h5>Kontakt</h5>
                     <p>email@email.com<br>
-                    +372 5555 5555</p>
+                        +372 5555 5555</p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-end align-items-end">
                     <div class="social-icons">
@@ -173,4 +191,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
