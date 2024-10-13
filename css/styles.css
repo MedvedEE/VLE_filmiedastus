@@ -118,3 +118,11 @@ body {
 hr {
     border-top: 2px solid black;
   }
+
+  .selected-package {
+    background-color: #c23a53;
+    color: white;
+}
+h2 {
+    color: black;
+}
