@@ -23,56 +23,11 @@
     <!-- Menüü  -->
     <div class="navbar">
         <ul>
-            <li><a href="#">Seriaalid</a></li>
-            <li><a href="#">Filmid</a></li>
+            <li><a href="index.html">Seriaalid</a></li>
+            <li><a href="index.html">Filmid</a></li>
             <li><a href="#">Tellimine</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
         </ul>
-    </div>
-
-    <div class="container mt-4">
-        <h1 class="text-dark">Vali pakett</h1>
-        <div class="d-grid gap-2">
-            <button type="button" class="btn selected-package" onclick="startMovieProcess()">Pakett on juba valitud</button>
-            <button type="button" class="btn btn-secondary" onclick="choosePackage()">Vali uus pakett</button>
-        </div>
-
-        <div id="package-selection" class="mt-4 d-none">
-            <button type="button" class="btn selected-package" onclick="chooseStudentPackage()">Võta tudengi pakett</button>
-            <button type="button" class="btn selected-package" onclick="chooseRegularPackage()">Võta tavapakett</button>
-        </div>
-
-        <div id="payment-process" class="mt-4 d-none">
-            <h2>Sisestage kontakt- ja makseandmed</h2>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Eesnimi" id="firstName">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Perekonnanimi" id="lastName">
-            </div>
-            <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email" id="email">
-            </div>
-            <div class="mb-3">
-                <label for="bank" class="form-label">Vali pank</label>
-                <select class="form-select" id="bank">
-                    <option value="" disabled selected>Vali pank...</option>
-                    <option value="lhv">LHV</option>
-                    <option value="seb">SEB</option>
-                    <option value="swedbank">SwedBank</option>
-                    <option value="luminor">Luminor</option>
-                    <option value="coop">Coop</option>
-                    <option value="paypal">PayPal</option>
-                </select>
-            </div>
-            <button type="button" class="btn btn-success" onclick="makePayment()">Maksa</button>
-        </div>
-
-        <div id="payment-confirmation" class="mt-4 d-none">
-            <h2>Maksmine õnnestus</h2>
-            <p style="color: black;">Kinnitus makse kohta on saadetud. Nüüd saad filmi vaadata!</p>
-            <button type="button" class="btn btn-danger" onclick="playMovie()">Pane film käima</button>
-        </div>
     </div>
 
     <div class="container mt-4">
@@ -92,6 +47,52 @@
                 </div>
             </div>            
         </div>
+
+        <div class="container mt-4">
+            <h1 class="text-dark">Vali pakett</h1>
+            <div class="d-grid gap-2">
+                <button type="button" class="btn selected-package" onclick="startMovieProcess()">Pakett on juba valitud</button>
+                <button type="button" class="btn btn-secondary" onclick="choosePackage()">Vali uus pakett</button>
+            </div>
+    
+            <div id="package-selection" class="mt-4 d-none">
+                <button type="button" class="btn selected-package" onclick="chooseStudentPackage()">Võta tudengi pakett</button>
+                <button type="button" class="btn selected-package" onclick="chooseRegularPackage()">Võta tavapakett</button>
+            </div>
+    
+            <div id="payment-process" class="mt-4 d-none">
+                <h2>Sisestage kontakt- ja makseandmed</h2>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Eesnimi" id="firstName">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Perekonnanimi" id="lastName">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="bank" class="form-label text-dark">Vali pank</label>
+                    <select class="form-select" id="bank">
+                        <option value="" disabled selected>Vali pank...</option>
+                        <option value="lhv">LHV</option>
+                        <option value="seb">SEB</option>
+                        <option value="swedbank">SwedBank</option>
+                        <option value="luminor">Luminor</option>
+                        <option value="coop">Coop</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-success" onclick="makePayment()">Maksa</button>
+            </div>
+    
+            <div id="payment-confirmation" class="mt-4 d-none">
+                <h2>Maksmine õnnestus</h2>
+                <p style="color: black;">Kinnitus makse kohta on saadetud. Nüüd saad filmi vaadata!</p>
+                <button type="button" class="btn btn-danger" onclick="playMovie()">Pane film käima</button>
+            </div>
+        </div>
+
         <hr>
         <h1 class="text-dark">Sulle võib ka meeldida</h1>
         <br>
@@ -108,6 +109,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- Jalus -->
     <footer class="footer ">

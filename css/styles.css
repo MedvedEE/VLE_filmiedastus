@@ -17,7 +17,7 @@ body {
   }
 .navbar ul li {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 13px;
 }
 .navbar a {
     color: white;
@@ -44,7 +44,7 @@ body {
     flex-direction: column;
     justify-content: flex-end; 
     align-items: center; 
-    height: 300px; 
+    height: 380px; 
     width: 100%; 
     position: relative; 
     color: white;
@@ -84,12 +84,12 @@ body {
     bottom: 0; 
     border-radius: 0 0 10px 10px; 
 }
-.btn-comedy { background-image: url('../images/comedy.jpg'); }
-.btn-thriller { background-image: url('../images/thriller.jpg'); }
-.btn-crime { background-image: url('../images/crime.jpg'); }
-.btn-documentary { background-image: url('../images/documentary.jpg'); }
-.btn-romance { background-image: url('../images/romance.jpg'); }
-.btn-adventure { background-image: url('../images/adventure.jpg'); }
+.btn-comedy { background-image: url('../images/comedy.jpg'); background-size: 100%;}
+.btn-thriller { background-image: url('../images/thriller.jpg'); background-size: 100%;}
+.btn-crime { background-image: url('../images/crime.jpg'); background-size: 100%;}
+.btn-documentary { background-image: url('../images/documentary.jpg'); background-size: 100%;}
+.btn-romance { background-image: url('../images/romance.jpg'); background-size: 100%;}
+.btn-adventure { background-image: url('../images/adventure.jpg'); background-size: 100%;}
 
 .footer {
     background-color: #c23a53; 
